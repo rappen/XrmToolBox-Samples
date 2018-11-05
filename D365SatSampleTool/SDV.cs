@@ -32,7 +32,6 @@ namespace D365SatSampleTool
             gridViews.OrganizationService = detail.ServiceClient;
             gridData.OrganizationService = detail.ServiceClient;
             entitiesDropdownControl1.Service = detail.ServiceClient;
-            entitiesDropdownControl1.LoadData();
         }
 
         private void LoadViews(EntityMetadata entitymetadata)

@@ -34,8 +34,8 @@
     <Reference Include="Cinteros.Xrm.CRMWinForm, Version=2018.9.6.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Cinteros.Xrm.CRMWinForm.2018.9.6.1\lib\net452\Cinteros.Xrm.CRMWinForm.dll</HintPath>
     </Reference>
-    <Reference Include="Futurez.XrmToolbox.Controls, Version=1.2018.11.6, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Futurez.XrmToolBox.Controls.1.2018.11.6\lib\net47\Futurez.XrmToolbox.Controls.dll</HintPath>
+    <Reference Include="Futurez.XrmToolbox.Controls, Version=1.2018.11.7, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Futurez.XrmToolBox.Controls.1.2018.11.7\lib\net47\Futurez.XrmToolbox.Controls.dll</HintPath>
     </Reference>
     <Reference Include="McTools.Xrm.Connection, Version=1.2018.7.19, Culture=neutral, PublicKeyToken=96037217801d9658, processorArchitecture=MSIL">
       <HintPath>..\packages\MscrmTools.Xrm.Connection.1.2018.7.19\lib\net462\McTools.Xrm.Connection.dll</HintPath>

@@ -128,7 +128,7 @@
             // 
             this.entitiesDropdownControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.entitiesDropdownControl1.AutoLoadData = false;
+            this.entitiesDropdownControl1.AutoLoadData = true;
             this.entitiesDropdownControl1.Location = new System.Drawing.Point(6, 22);
             this.entitiesDropdownControl1.Name = "entitiesDropdownControl1";
             this.entitiesDropdownControl1.ParentBaseControl = this;
@@ -226,12 +226,12 @@
             this.chkFriendly.UseVisualStyleBackColor = true;
             this.chkFriendly.CheckedChanged += new System.EventHandler(this.chkFriendly_CheckedChanged);
             // 
-            // MyPluginControl
+            // SDV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.splitContainer1);
-            this.Name = "MyPluginControl";
+            this.Name = "SDV";
             this.Size = new System.Drawing.Size(831, 533);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
