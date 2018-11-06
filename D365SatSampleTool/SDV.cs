@@ -13,6 +13,8 @@ namespace D365SatSampleTool
 {
     public partial class SDV : PluginControlBase, IMessageBusHost, IAboutPlugin
     {
+        private bool working = false;
+
         public SDV()
         {
             InitializeComponent();
@@ -38,6 +40,11 @@ namespace D365SatSampleTool
                 gridViews.DataSource = null;
                 return;
             }
+            if (working)
+            {
+                return;
+            }
+            working = true;
             WorkAsync(new WorkAsyncInfo
             {
                 Message = $"Loading views for {entitymetadata.DisplayName.UserLocalizedLabel.Label}",
@@ -54,6 +61,7 @@ namespace D365SatSampleTool
                 },
                 PostWorkCallBack = (args) =>
                 {
+                    working = false;
                     if (args.Error != null)
                     {
                         MessageBox.Show(args.Error.Message, "Oh crap", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -74,6 +82,11 @@ namespace D365SatSampleTool
                 gridData.DataSource = null;
                 return;
             }
+            if (working)
+            {
+                return;
+            }
+            working = true;
             WorkAsync(new WorkAsyncInfo
             {
                 Message = $"Loading data for {entity["name"]}",
@@ -86,6 +99,7 @@ namespace D365SatSampleTool
                 },
                 PostWorkCallBack = (args) =>
                 {
+                    working = false;
                     if (args.Error != null)
                     {
                         MessageBox.Show(args.Error.Message, "Oh crap", MessageBoxButtons.OK, MessageBoxIcon.Error);
