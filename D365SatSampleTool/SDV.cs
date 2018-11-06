@@ -11,9 +11,15 @@ using XrmToolBox.Extensibility.Interfaces;
 
 namespace D365SatSampleTool
 {
-    public partial class SDV : PluginControlBase, IMessageBusHost, IAboutPlugin
+    public partial class SDV : PluginControlBase, IMessageBusHost, IAboutPlugin, IGitHubPlugin, IHelpPlugin
     {
         private bool working = false;
+
+        public string RepositoryName => "D365SatSamples";
+
+        public string UserName => "rappen";
+
+        public string HelpUrl => "https://jonasrapp.net/";
 
         public SDV()
         {
