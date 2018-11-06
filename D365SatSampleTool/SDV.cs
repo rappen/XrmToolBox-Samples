@@ -1,27 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Drawing;
-using System.Data;
+﻿using McTools.Xrm.Connection;
+using Microsoft.Xrm.Sdk;
+using Microsoft.Xrm.Sdk.Metadata;
+using Microsoft.Xrm.Sdk.Query;
+using System;
+using System.Diagnostics;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using XrmToolBox.Extensibility;
-using Microsoft.Xrm.Sdk.Query;
-using Microsoft.Xrm.Sdk;
-using McTools.Xrm.Connection;
-using Microsoft.Xrm.Sdk.Metadata;
-using System.Diagnostics;
+using XrmToolBox.Extensibility.Interfaces;
 
 namespace D365SatSampleTool
 {
-    public partial class SDV : PluginControlBase
+    public partial class SDV : PluginControlBase, IMessageBusHost, IAboutPlugin
     {
         public SDV()
         {
             InitializeComponent();
         }
+
+        public event EventHandler<MessageBusEventArgs> OnOutgoingMessage;
 
         /// <summary>
         /// This event occurs when the connection has been updated in XrmToolBox
@@ -167,6 +164,24 @@ namespace D365SatSampleTool
             {
                 OpenEntityReference(entref);
             }
+        }
+
+        public void OnIncomingMessage(MessageBusEventArgs message)
+        {
+            MessageBox.Show("Simple Data Viewer cannot yet handle calls from other tools.");
+        }
+
+        public void ShowAboutDialog()
+        {
+            MessageBox.Show("Simple Data Viewer\n\nD365 Saturday Sample project");
+        }
+
+        private void btnFXB_Click(object sender, EventArgs e)
+        {
+            OnOutgoingMessage(this, new MessageBusEventArgs("FetchXML Builder")
+            {
+                TargetArgument = gridViews.SelectedCellRecords.Entities.FirstOrDefault()["fetchxml"]
+            });
         }
     }
 }

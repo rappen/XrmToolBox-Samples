@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SDV));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.gridViews = new Cinteros.Xrm.CRMWinForm.CRMGridView();
@@ -37,6 +38,7 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.gridData = new Cinteros.Xrm.CRMWinForm.CRMGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.btnFXB = new System.Windows.Forms.Button();
             this.chkLookup = new System.Windows.Forms.CheckBox();
             this.chkDbl = new System.Windows.Forms.CheckBox();
             this.chkId = new System.Windows.Forms.CheckBox();
@@ -171,6 +173,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.btnFXB);
             this.groupBox3.Controls.Add(this.chkLookup);
             this.groupBox3.Controls.Add(this.chkDbl);
             this.groupBox3.Controls.Add(this.chkId);
@@ -182,6 +185,20 @@
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Options";
+            // 
+            // btnFXB
+            // 
+            this.btnFXB.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnFXB.Image = ((System.Drawing.Image)(resources.GetObject("btnFXB.Image")));
+            this.btnFXB.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFXB.Location = new System.Drawing.Point(498, 24);
+            this.btnFXB.Name = "btnFXB";
+            this.btnFXB.Size = new System.Drawing.Size(97, 23);
+            this.btnFXB.TabIndex = 4;
+            this.btnFXB.Text = "Open in FXB";
+            this.btnFXB.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnFXB.UseVisualStyleBackColor = true;
+            this.btnFXB.Click += new System.EventHandler(this.btnFXB_Click);
             // 
             // chkLookup
             // 
@@ -262,5 +279,6 @@
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.CheckBox chkDbl;
         private System.Windows.Forms.CheckBox chkLookup;
+        private System.Windows.Forms.Button btnFXB;
     }
 }
