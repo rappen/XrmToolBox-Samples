@@ -37,9 +37,6 @@
     <Reference Include="Cinteros.Xrm.CRMWinForm, Version=2018.9.6.1, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Cinteros.Xrm.CRMWinForm.2018.9.6.1\lib\net452\Cinteros.Xrm.CRMWinForm.dll</HintPath>
     </Reference>
-    <Reference Include="Futurez.XrmToolbox.Controls, Version=1.2018.11.7, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Futurez.XrmToolBox.Controls.1.2018.11.7\lib\net47\Futurez.XrmToolbox.Controls.dll</HintPath>
-    </Reference>
     <Reference Include="McTools.Xrm.Connection, Version=1.2018.7.19, Culture=neutral, PublicKeyToken=96037217801d9658, processorArchitecture=MSIL">
       <HintPath>..\packages\MscrmTools.Xrm.Connection.1.2018.7.19\lib\net462\McTools.Xrm.Connection.dll</HintPath>
     </Reference>
@@ -117,6 +114,9 @@
     </Reference>
     <Reference Include="WeifenLuo.WinFormsUI.Docking.ThemeVS2015, Version=3.0.4.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
       <HintPath>..\packages\DockPanelSuite.ThemeVS2015.3.0.4\lib\net40\WeifenLuo.WinFormsUI.Docking.ThemeVS2015.dll</HintPath>
+    </Reference>
+    <Reference Include="xrmtb.XrmToolBox.Controls, Version=1.2018.12.1, Culture=neutral, PublicKeyToken=34def2c40500c62c, processorArchitecture=MSIL">
+      <HintPath>..\packages\xrmtb.XrmToolBox.Controls.1.2019.1.1\lib\net47\xrmtb.XrmToolBox.Controls.dll</HintPath>
     </Reference>
     <Reference Include="XrmToolBox, Version=1.2018.7.28, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\XrmToolBoxPackage.1.2018.7.28\lib\net462\XrmToolBox.exe</HintPath>

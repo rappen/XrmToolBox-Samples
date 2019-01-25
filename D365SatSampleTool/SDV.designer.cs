@@ -34,7 +34,7 @@
             this.gridViews = new Cinteros.Xrm.CRMWinForm.CRMGridView();
             this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.entitiesDropdownControl1 = new Futurez.XrmToolBox.Controls.EntitiesDropdownControl();
+            this.entitiesDropdownControl1 = new xrmtb.XrmToolBox.Controls.EntitiesDropdownControl();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.gridData = new Cinteros.Xrm.CRMWinForm.CRMGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
@@ -131,13 +131,15 @@
             this.entitiesDropdownControl1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.entitiesDropdownControl1.AutoLoadData = true;
+            this.entitiesDropdownControl1.LanguageCode = 1033;
             this.entitiesDropdownControl1.Location = new System.Drawing.Point(6, 22);
+            this.entitiesDropdownControl1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.entitiesDropdownControl1.Name = "entitiesDropdownControl1";
-            this.entitiesDropdownControl1.ParentBaseControl = this;
             this.entitiesDropdownControl1.Service = null;
             this.entitiesDropdownControl1.Size = new System.Drawing.Size(214, 25);
+            this.entitiesDropdownControl1.SolutionFilter = null;
             this.entitiesDropdownControl1.TabIndex = 1;
-            this.entitiesDropdownControl1.SelectedItemChanged += new System.EventHandler<Futurez.XrmToolBox.Controls.EntitiesDropdownControl.SelectedItemChangedEventArgs>(this.entitiesDropdownControl1_SelectedItemChanged);
+            this.entitiesDropdownControl1.SelectedItemChanged += new System.EventHandler(this.EntitiesDropdownControl1_SelectedItemChanged);
             // 
             // groupBox4
             // 
@@ -274,7 +276,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn name;
         private System.Windows.Forms.CheckBox chkFriendly;
         private System.Windows.Forms.CheckBox chkId;
-        private Futurez.XrmToolBox.Controls.EntitiesDropdownControl entitiesDropdownControl1;
+        private xrmtb.XrmToolBox.Controls.EntitiesDropdownControl entitiesDropdownControl1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox4;

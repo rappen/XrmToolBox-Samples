@@ -15,7 +15,7 @@ namespace D365SatSampleTool
     {
         private bool working = false;
 
-        public string RepositoryName => "D365SatSamples";
+        public string RepositoryName => "XrmToolBox-Samples";
 
         public string UserName => "rappen";
 
@@ -145,7 +145,7 @@ namespace D365SatSampleTool
             }
         }
 
-        private void entitiesDropdownControl1_SelectedItemChanged(object sender, Futurez.XrmToolBox.Controls.EntitiesDropdownControl.SelectedItemChangedEventArgs e)
+        private void EntitiesDropdownControl1_SelectedItemChanged(object sender, EventArgs e)
         {
             LoadViews(entitiesDropdownControl1.SelectedEntity);
         }
